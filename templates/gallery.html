@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Cake Maker & Designer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/gallery.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-bar" style="position:fixed; top:0; left:0; height:5px; background-color:#ff7f50; width:0%;"></div>
+
+    <!-- Header Section with Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about_me') }}">About Me</a></li>
+                <li><a href="{{ url_for('gallery') }}">My Cakes</a></li>
+                <li><a href="{{ url_for('skills') }}">Skills</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <h1>My Cake Gallery</h1>
+        <div class="gallery">
+            <figure>
+                <img src="{{ url_for('static', filename='images/cake7.jpg') }}" alt="Elegant Wedding Cake">
+                <figcaption>Elegant Wedding Cake</figcaption>
+            </figure>
+            <figure>
+                <img src="{{ url_for('static', filename='images/cake3.jpg') }}" alt="Colorful Birthday Cake">
+                <figcaption>Colorful Birthday Cake</figcaption>
+            </figure>
+            <figure>
+                <img src="{{ url_for('static', filename='images/Chocolate cake with berries.jpg') }}" alt="Chocolate Cake with Berries">
+                <figcaption>Chocolate Cake with Berries</figcaption>
+            </figure>
+            <figure>
+                <img src="{{ url_for('static', filename='images/Artistic floral cake.jpg') }}" alt="Artistic Floral Cake">
+                <figcaption>Artistic Floral Cake</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Tatiana Mititelu - Cake Maker & Designer. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Link to JS file -->
+    <script src="{{ url_for('static', filename='js/gallery.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Cake Maker & Designer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about-me.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-bar" style="position:fixed; top:0; left:0; height:5px; background-color:#ff7f50; width:0%;"></div>
+
+    <!-- Header Section with Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about_me') }}">About Me</a></li>
+                <li><a href="{{ url_for('gallery') }}">My Cakes</a></li>
+                <li><a href="{{ url_for('skills') }}">Skills</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Me Section -->
+    <section class="about-section">
+        <h1>About Me</h1>
+        <div class="about-content">
+            <img src="{{ url_for('static', filename='images/my-baking.jpg') }}" alt="Baking with my kids" class="about-image" />
+            <div class="about-text">
+                <p>
+                    Creating beautiful cakes is more than just a hobby for me; it's a way to express my creativity and share happiness with others. Whether it’s a birthday, wedding, or just a little celebration, I believe every occasion deserves a special cake that tells a story.
+                </p>
+                <p>
+                    I enjoy experimenting with flavors, textures, and decorations, always striving to make each cake a unique masterpiece. My children often inspire my designs, and I love involving them in the baking process, turning it into a fun family activity.
+                </p>
+                <p>
+                    Through my cakes, I hope to spread smiles and create lasting memories for everyone who enjoys my creations. Join me on this delightful journey as I blend my love for baking with the joys and challenges of everyday life!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Tatiana Mititelu - Cake Maker & Designer. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Link to JS file -->
+    <script src="{{ url_for('static', filename='js/about_me.js') }}"></script>
+</body>
+</html>

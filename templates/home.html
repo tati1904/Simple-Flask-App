@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Cake Maker & Designer</title>
+
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-bar" style="position:fixed; top:0; left:0; height:5px; background-color:#ff7f50; width:0%;"></div>
+
+    <!-- Header Section with Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about_me') }}">About Me</a></li>
+                <li><a href="{{ url_for('gallery') }}">My Cakes</a></li>
+                <li><a href="{{ url_for('skills') }}">Skills</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section with Dynamic Welcome Message -->
+    <section id="home" class="home-section">
+        <h1 id="welcome-message">Welcome to my Cake Portfolio!</h1>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <article>
+            <h1>Hi, I'm Tatiana</h1>
+            <p>
+                I am deeply passionate about the art of cake making and design. Ever since I can remember, I've been fascinated by how something so simple as flour, eggs, and sugar can be transformed into a masterpiece.
+            </p>
+            <p>
+                What started as a hobby quickly became an obsession, experimenting with flavors, textures, and decorations. Over time, I developed my skills in creating cakes that tell a story.
+            </p>
+            <p>
+                Beyond the kitchen, I have a keen eye for design and aesthetics. I love incorporating elements of art and craftsmanship into my cakes, ensuring every detail matters.
+            </p>
+            <p>
+                Cake making is my creative outlet, blending my love for art and food, crafting edible masterpieces that celebrate life's important moments.
+            </p>
+        </article>
+    </section>
+
+    <!-- Image Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <h2>My Cakes Gallery</h2>
+        <div class="gallery">
+            <figure>
+                <img src="{{ url_for('static', filename='images/Elegant wedding cake.jpg') }}" alt="Elegant wedding cake" />
+                <figcaption>Elegant Wedding Cake</figcaption>
+            </figure>
+            <figure>
+                <img src="{{ url_for('static', filename='images/Colorful birthday cake.jpg') }}" alt="Colorful birthday cake" />
+                <figcaption>Colorful Birthday Cake</figcaption>
+            </figure>
+            <figure>
+                <img src="{{ url_for('static', filename='images/Chocolate cake with berries.jpg') }}" alt="Chocolate cake with berries" />
+                <figcaption>Chocolate Cake with Berries</figcaption>
+            </figure>
+            <figure>
+                <img src="{{ url_for('static', filename='images/Artistic floral cake.jpg') }}" alt="Artistic floral cake" />
+                <figcaption>Artistic Floral Cake</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Tatiana Mititelu - Cake Maker & Designer. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Link to JS file -->
+    <script src="{{ url_for('static', filename='js/home.js') }}"></script>
+
+
+</body>
+</html>
+

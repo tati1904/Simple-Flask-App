@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Cake Maker & Designer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/skills.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-bar" style="position:fixed; top:0; left:0; height:5px; background-color:#ff7f50; width:0%;"></div>
+
+    <!-- Header Section with Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about_me') }}">About Me</a></li>
+                <li><a href="{{ url_for('gallery') }}">My Cakes</a></li>
+                <li><a href="{{ url_for('skills') }}">Skills</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Skills Section -->
+    <section class="skills-section">
+        <h1>My Skills</h1>
+        <p>I am constantly evolving my skills as a cake maker and designer. Below are some of the key areas of expertise I bring to my creations.</p>
+        <div class="skills-list">
+            <div class="skill">
+                <h2>Baking</h2>
+                <p>Mastered the art of baking cakes of various flavors, textures, and sizes.</p>
+            </div>
+            <div class="skill">
+                <h2>Fondant Work</h2>
+                <p>Expert in creating smooth, artistic fondant designs for all kinds of cakes.</p>
+            </div>
+            <div class="skill">
+                <h2>Piping</h2>
+                <p>Skilled in delicate piping techniques for beautiful cake borders and decorations.</p>
+            </div>
+            <div class="skill">
+                <h2>Custom Designs</h2>
+                <p>Experienced in designing and crafting custom cakes tailored to client requests.</p>
+            </div>
+            <div class="skill">
+                <h2>Flavor Pairing</h2>
+                <p>Developed a keen sense of pairing flavors to enhance the overall taste experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Tatiana Mititelu - Cake Maker & Designer. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Link to JS file -->
+    <script src="{{ url_for('static', filename='js/skills.js') }}"></script>
+
+</body>
+</html>
